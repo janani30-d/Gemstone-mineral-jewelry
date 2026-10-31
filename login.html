@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Gemstone & Mineral Jewelry</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/gemstone-mineral-logo.png">
+
+    <!-- GOOGLE FONT – INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="gm-login-page">
+
+    <!-- =================================================
+         LOGIN HEADER
+    ================================================== -->
+
+    <header class="gm-login-header">
+
+        <div class="gm-login-header-container">
+
+            <!-- LOGO -->
+            <a href="index.html" class="gm-login-logo">
+                <img src="images/logo.png"
+                     alt="Gemstone and Mineral Jewelry">
+            </a>
+
+            <!-- HEADER ACTIONS -->
+            <div class="gm-login-header-actions">
+
+                <!-- RTL TOGGLE -->
+                    <button class="gm-icon-btn"
+                            id="gmRtlToggle"
+                            type="button"
+                            aria-label="Toggle right to left layout"
+                            title="Toggle RTL">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE TOGGLE -->
+                    <button class="gm-icon-btn"
+                            id="gmDarkToggle"
+                            type="button"
+                            aria-label="Toggle dark mode"
+                            title="Toggle dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =================================================
+         LOGIN MAIN SECTION
+    ================================================== -->
+
+    <main class="gm-login-main">
+
+        <div class="gm-login-wrapper">
+
+            <!-- =========================================
+                 LEFT IMAGE PANEL
+            ========================================== -->
+
+            <div class="gm-login-visual">
+
+                <!-- BACKGROUND IMAGE -->
+                <div class="gm-login-visual-image">
+
+                    <img src="images/login-banner.jpg"
+                         alt="Luxury emerald gemstone jewelry"
+                         loading="eager">
+
+                </div>
+
+                <!-- IMAGE OVERLAY -->
+                <div class="gm-login-visual-overlay"></div>
+
+
+                <!-- IMAGE CONTENT -->
+                <div class="gm-login-visual-content">
+
+                    <span class="gm-login-visual-eyebrow">
+                        WELCOME BACK
+                    </span>
+
+                    <h1 class="gm-login-visual-title">
+                        Discover the Beauty
+                        <span>of Every Gem.</span>
+                    </h1>
+
+                    <p class="gm-login-visual-description">
+                        Sign in to explore your favorite gemstones,
+                        manage your orders and discover jewelry
+                        that reflects your unique style.
+                    </p>
+
+                    <div class="gm-login-visual-footer">
+
+                        <span>RARE</span>
+                        <span class="gm-login-visual-dot"></span>
+                        <span>TIMELESS</span>
+                        <span class="gm-login-visual-dot"></span>
+                        <span>UNIQUE</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+                 RIGHT LOGIN FORM PANEL
+            ========================================== -->
+
+            <div class="gm-login-form-panel">
+
+                <div class="gm-login-form-inner">
+
+                    <!-- FORM HEADING -->
+                    <div class="gm-login-form-heading">
+
+                        <div class="gm-login-step">
+
+                            <span>01</span>
+
+                            <div class="gm-login-step-line"></div>
+
+                            <strong>MEMBER LOGIN</strong>
+
+                        </div>
+
+                        <span class="gm-login-welcome">
+                            WELCOME BACK
+                        </span>
+
+                        <h2 class="gm-login-title">
+                            Good To See
+                            <span>You Again.</span>
+                        </h2>
+
+                        <p class="gm-login-description">
+                            Sign in to continue your gemstone jewelry
+                            experience with us.
+                        </p>
+
+                    </div>
+
+
+                    <!-- LOGIN FORM -->
+                    <form class="gm-login-form"
+                          id="gmLoginForm"
+                          action="#"
+                          method="post">
+
+                        <!-- EMAIL -->
+                        <div class="gm-login-field">
+
+                            <label for="gmLoginEmail">
+                                Email Address
+                            </label>
+
+                            <div class="gm-login-input-wrapper">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <input type="email"
+                                       id="gmLoginEmail"
+                                       name="email"
+                                       placeholder="Enter your email address"
+                                       autocomplete="email"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="gm-login-field">
+
+                            <label for="gmLoginPassword">
+                                Password
+                            </label>
+
+                            <div class="gm-login-input-wrapper">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input type="password"
+                                       id="gmLoginPassword"
+                                       name="password"
+                                       placeholder="Enter your password"
+                                       autocomplete="current-password"
+                                       required>
+
+                                <button type="button"
+                                        class="gm-login-password-toggle"
+                                        id="gmLoginPasswordToggle"
+                                        aria-label="Show password">
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- REMEMBER / FORGOT PASSWORD -->
+                        <div class="gm-login-options">
+
+                            <label class="gm-login-remember">
+
+                                <input type="checkbox"
+                                       name="remember"
+                                       id="gmLoginRemember">
+
+                                <span class="gm-login-checkmark"></span>
+
+                                <span>Remember me</span>
+
+                            </label>
+
+                            <a href="forgot-password.html"
+                               class="gm-login-forgot">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <!-- LOGIN BUTTON -->
+                        <button type="submit"
+                                class="gm-login-submit">
+
+                            <span>Login to Your Account</span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </form>
+
+
+                    <!-- DIVIDER -->
+                    <div class="gm-login-divider">
+
+                        <span></span>
+
+                        <strong>OR CONTINUE WITH</strong>
+
+                        <span></span>
+
+                    </div>
+
+
+                    
+<!-- =================================================
+     SOCIAL LOGIN
+================================================== -->
+
+<div class="gm-login-social">
+
+    <!-- GOOGLE -->
+    <button type="button"
+            class="gm-login-social-btn gm-login-google">
+
+        <svg class="gm-login-google-svg"
+             xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 48 48"
+             aria-hidden="true">
+
+            <path fill="#4285F4"
+                  d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.1h6.6c3.9-3.6 6.1-8.8 6.1-15z"/>
+
+            <path fill="#34A853"
+                  d="M24 44c5.5 0 10.1-1.8 13.5-4.8l-6.6-5.1c-1.8 1.2-4.1 1.9-6.9 1.9-5.3 0-9.8-3.6-11.4-8.4H5.8v5.3A20 20 0 0 0 24 44z"/>
+
+            <path fill="#FBBC05"
+                  d="M12.6 27.6a12 12 0 0 1 0-7.2v-5.3H5.8a20 20 0 0 0 0 17.8z"/>
+
+            <path fill="#EA4335"
+                  d="M24 11.9c3 0 5.7 1 7.8 3.1l5.8-5.8C34.1 5.9 29.5 4 24 4A20 20 0 0 0 5.8 15.1l6.8 5.3c1.6-4.9 6.1-8.5 11.4-8.5z"/>
+
+        </svg>
+
+        <span>Google</span>
+
+    </button>
+
+
+    <!-- FACEBOOK -->
+    <button type="button"
+            class="gm-login-social-btn gm-login-facebook">
+
+        <i class="fa-brands fa-facebook-f"></i>
+
+        <span>Facebook</span>
+
+    </button>
+
+
+    <!-- APPLE -->
+    <button type="button"
+            class="gm-login-social-btn gm-login-apple">
+
+        <i class="fa-brands fa-apple"></i>
+
+        <span>Apple</span>
+
+    </button>
+
+</div>
+
+
+                    <!-- REGISTER LINK -->
+                    <div class="gm-login-register">
+
+                        <p>
+                            Don't have an account?
+
+                            <a href="register.html">
+                                Create an Account
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <!-- BOTTOM BRAND TEXT -->
+                    <div class="gm-login-bottom-text">
+
+                        <span>RARE</span>
+                        <span>•</span>
+                        <span>TIMELESS</span>
+                        <span>•</span>
+                        <span>BEAUTIFUL</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =================================================
+         LOGIN JAVASCRIPT
+    ================================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

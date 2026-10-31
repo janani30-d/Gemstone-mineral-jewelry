@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Gemstone & Mineral Jewelry</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/gemstone-mineral-logo.png">
+
+    <!-- GOOGLE FONT – INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="gm-register-page">
+
+    <!-- =================================================
+         REGISTER HEADER
+    ================================================== -->
+
+    <header class="gm-register-header">
+
+        <div class="gm-register-header-container">
+
+            <!-- LOGO -->
+            <a href="index.html" class="gm-register-logo">
+
+                <img src="images/logo.png"
+                     alt="Gemstone and Mineral Jewelry">
+
+            </a>
+
+
+            <!-- HEADER ACTIONS -->
+            <div class="gm-register-header-actions">
+
+                <!-- RTL TOGGLE -->
+                    <button class="gm-icon-btn"
+                            id="gmRtlToggle"
+                            type="button"
+                            aria-label="Toggle right to left layout"
+                            title="Toggle RTL">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE TOGGLE -->
+                    <button class="gm-icon-btn"
+                            id="gmDarkToggle"
+                            type="button"
+                            aria-label="Toggle dark mode"
+                            title="Toggle dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =================================================
+         REGISTER MAIN SECTION
+    ================================================== -->
+
+    <main class="gm-register-main">
+
+        <div class="gm-register-wrapper">
+
+
+            <!-- =========================================
+                 LEFT IMAGE PANEL
+            ========================================== -->
+
+            <div class="gm-register-visual">
+
+                <!-- BACKGROUND IMAGE -->
+                <div class="gm-register-visual-image">
+
+                    <img src="images/register-banner.jpg"
+                         alt="Luxury gemstone and mineral jewelry collection"
+                         loading="eager">
+
+                </div>
+
+
+                <!-- IMAGE OVERLAY -->
+                <div class="gm-register-visual-overlay"></div>
+
+
+                <!-- IMAGE CONTENT -->
+                <div class="gm-register-visual-content">
+
+                    <span class="gm-register-visual-eyebrow">
+                        BEGIN YOUR JOURNEY
+                    </span>
+
+                    <h1 class="gm-register-visual-title">
+                        A World of Beauty,
+                        <span>Made for You.</span>
+                    </h1>
+
+                    <p class="gm-register-visual-description">
+                        Discover exceptional gemstones, timeless
+                        jewelry and meaningful pieces created to
+                        celebrate your individual style.
+                    </p>
+
+
+                    <!-- VISUAL FOOTER -->
+                    <div class="gm-register-visual-footer">
+
+                        <span>RARE</span>
+
+                        <span class="gm-register-visual-dot"></span>
+
+                        <span>TIMELESS</span>
+
+                        <span class="gm-register-visual-dot"></span>
+
+                        <span>UNIQUE</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+                 RIGHT REGISTER FORM PANEL
+            ========================================== -->
+
+            <div class="gm-register-form-panel">
+
+                <div class="gm-register-form-inner">
+
+
+                    <!-- FORM HEADING -->
+                    <div class="gm-register-form-heading">
+
+                        <div class="gm-register-step">
+
+                            <span>02</span>
+
+                            <div class="gm-register-step-line"></div>
+
+                            <strong>CREATE ACCOUNT</strong>
+
+                        </div>
+
+
+                        <span class="gm-register-welcome">
+                            JOIN OUR COMMUNITY
+                        </span>
+
+
+                        <h2 class="gm-register-title">
+                            Create Your
+                            <span>Account.</span>
+                        </h2>
+
+
+                        <p class="gm-register-description">
+                            Create an account to explore your favorite
+                            gemstones, save your collections and enjoy
+                            a personalized jewelry experience.
+                        </p>
+
+                    </div>
+
+
+                    <!-- =================================
+                         REGISTER FORM
+                    ================================== -->
+
+                    <form class="gm-register-form"
+                          id="gmRegisterForm"
+                          action="#"
+                          method="post">
+
+
+                        <!-- FIRST NAME -->
+                        <div class="gm-register-field">
+
+                            <label for="gmRegisterFirstName">
+                                First Name
+                            </label>
+
+                            <div class="gm-register-input-wrapper">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input type="text"
+                                       id="gmRegisterFirstName"
+                                       name="first_name"
+                                       placeholder="First name"
+                                       autocomplete="given-name"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- LAST NAME -->
+                        <div class="gm-register-field">
+
+                            <label for="gmRegisterLastName">
+                                Last Name
+                            </label>
+
+                            <div class="gm-register-input-wrapper">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input type="text"
+                                       id="gmRegisterLastName"
+                                       name="last_name"
+                                       placeholder="Last name"
+                                       autocomplete="family-name"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="gm-register-field gm-register-full">
+
+                            <label for="gmRegisterEmail">
+                                Email Address
+                            </label>
+
+                            <div class="gm-register-input-wrapper">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <input type="email"
+                                       id="gmRegisterEmail"
+                                       name="email"
+                                       placeholder="Enter your email address"
+                                       autocomplete="email"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHONE -->
+                        <div class="gm-register-field gm-register-full">
+
+                            <label for="gmRegisterPhone">
+                                Phone Number
+                            </label>
+
+                            <div class="gm-register-input-wrapper">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <input type="tel"
+                                       id="gmRegisterPhone"
+                                       name="phone"
+                                       placeholder="Enter your phone number"
+                                       autocomplete="tel">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="gm-register-field gm-register-full">
+
+                            <label for="gmRegisterPassword">
+                                Password
+                            </label>
+
+                            <div class="gm-register-input-wrapper">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input type="password"
+                                       id="gmRegisterPassword"
+                                       name="password"
+                                       placeholder="Create a password"
+                                       autocomplete="new-password"
+                                       required>
+
+                                <button type="button"
+                                        class="gm-register-password-toggle"
+                                        data-target="gmRegisterPassword"
+                                        aria-label="Show password">
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="gm-register-field gm-register-full">
+
+                            <label for="gmRegisterConfirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <div class="gm-register-input-wrapper">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input type="password"
+                                       id="gmRegisterConfirmPassword"
+                                       name="confirm_password"
+                                       placeholder="Confirm your password"
+                                       autocomplete="new-password"
+                                       required>
+
+                                <button type="button"
+                                        class="gm-register-password-toggle"
+                                        data-target="gmRegisterConfirmPassword"
+                                        aria-label="Show password">
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- TERMS AND CONDITIONS -->
+                        <div class="gm-register-terms">
+
+                            <label class="gm-register-terms-label">
+
+                                <input type="checkbox"
+                                       id="gmRegisterTerms"
+                                       name="terms"
+                                       required>
+
+                                <span class="gm-register-checkmark"></span>
+
+                                <span class="gm-register-terms-text">
+                                    I agree to the
+                                    <a href="terms.html">Terms & Conditions</a>
+                                    and
+                                    <a href="privacy.html">Privacy Policy</a>.
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- CREATE ACCOUNT BUTTON -->
+                        <button type="submit"
+                                class="gm-register-submit">
+
+                            <span>Create Your Account</span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </form>
+
+
+                    <!-- =================================
+                         SOCIAL REGISTER DIVIDER
+                    ================================== -->
+
+                    <div class="gm-register-divider">
+
+                        <span></span>
+
+                        <strong>OR CONTINUE WITH</strong>
+
+                        <span></span>
+
+                    </div>
+
+
+                    <!-- SOCIAL REGISTER -->
+                    <div class="gm-register-social">
+
+
+                        <!-- GOOGLE -->
+                        <button type="button"
+                                class="gm-register-social-btn gm-register-google">
+
+                            <svg class="gm-register-google-svg"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 48 48"
+                                 aria-hidden="true">
+
+                                <path fill="#4285F4"
+                                      d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.1h6.6c3.9-3.6 6.1-8.8 6.1-15z"/>
+
+                                <path fill="#34A853"
+                                      d="M24 44c5.5 0 10.1-1.8 13.5-4.8l-6.6-5.1c-1.8 1.2-4.1 1.9-6.9 1.9-5.3 0-9.8-3.6-11.4-8.4H5.8v5.3A20 20 0 0 0 24 44z"/>
+
+                                <path fill="#FBBC05"
+                                      d="M12.6 27.6a12 12 0 0 1 0-7.2v-5.3H5.8a20 20 0 0 0 0 17.8z"/>
+
+                                <path fill="#EA4335"
+                                      d="M24 11.9c3 0 5.7 1 7.8 3.1l5.8-5.8C34.1 5.9 29.5 4 24 4A20 20 0 0 0 5.8 15.1l6.8 5.3c1.6-4.9 6.1-8.5 11.4-8.5z"/>
+
+                            </svg>
+
+                            <span>Google</span>
+
+                        </button>
+
+
+                        <!-- FACEBOOK -->
+                        <button type="button"
+                                class="gm-register-social-btn gm-register-facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                            <span>Facebook</span>
+
+                        </button>
+
+
+                        <!-- APPLE -->
+                        <button type="button"
+                                class="gm-register-social-btn gm-register-apple">
+
+                            <i class="fa-brands fa-apple"></i>
+
+                            <span>Apple</span>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- LOGIN LINK -->
+                    <div class="gm-register-login">
+
+                        <p>
+                            Already have an account?
+
+                            <a href="login.html">
+                                Login Here
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <!-- BOTTOM BRAND TEXT -->
+                    <div class="gm-register-bottom-text">
+
+                        <span>RARE</span>
+                        <span>•</span>
+                        <span>TIMELESS</span>
+                        <span>•</span>
+                        <span>BEAUTIFUL</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

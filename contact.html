@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gemstone & Mineral | Jewelry Store</title>
+
+    <meta name="description" content="Discover exquisite gemstone and mineral jewelry, handcrafted collections and custom jewelry designs.">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         GEMSTONE & MINERAL HEADER
+    =========================================== -->
+
+    <header class="gm-header" id="gmHeader">
+
+        <div class="gm-header-container">
+
+            <!-- LOGO -->
+            <div class="gm-logo">
+
+                <a href="index.html">
+
+                    <img src="images/logo.png"
+                         alt="Gemstone & Mineral Jewelry Store Logo">
+
+                </a>
+
+            </div>
+
+
+            <!-- HAMBURGER MENU BUTTON -->
+            <button class="gm-menu-toggle"
+                    id="gmMenuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-controls="gmNavigation"
+                    aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <!-- NAVIGATION AND HEADER ACTIONS -->
+            <nav class="gm-navigation" id="gmNavigation"
+                 aria-label="Main navigation">
+
+
+                <!-- MAIN MENU -->
+                <ul class="gm-nav-list">
+
+
+                    <!-- HOME DROPDOWN -->
+                    <li class="gm-nav-item gm-home-dropdown">
+
+                        <button class="gm-nav-link gm-dropdown-toggle"
+                                type="button"
+                                aria-expanded="false">
+
+                            <span>Home</span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+
+                        <ul class="gm-dropdown-menu">
+
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- ABOUT -->
+                    <li class="gm-nav-item">
+
+                        <a href="about.html" class="gm-nav-link">
+                            About
+                        </a>
+
+                    </li>
+
+
+                    <!-- PRODUCTS -->
+                    <li class="gm-nav-item">
+
+                        <a href="products.html" class="gm-nav-link">
+                            Products
+                        </a>
+
+                    </li>
+
+
+                    <!-- CERTIFICATION -->
+                    <li class="gm-nav-item">
+
+                        <a href="certification.html" class="gm-nav-link">
+                            Certification & Sourcing
+                        </a>
+
+                    </li>
+
+
+                    <!-- CUSTOM DESIGN -->
+                    <li class="gm-nav-item">
+
+                        <a href="custom-design.html" class="gm-nav-link">
+                            Custom Design
+                        </a>
+
+                    </li>
+
+
+                    <!-- CONTACT -->
+                    <li class="gm-nav-item">
+
+                        <a href="contact.html" class="gm-nav-link active">
+                            Contact
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+
+                <!-- HEADER RIGHT ACTIONS -->
+                <div class="gm-header-actions">
+
+
+                    <!-- RTL TOGGLE -->
+                    <button class="gm-icon-btn"
+                            id="gmRtlToggle"
+                            type="button"
+                            aria-label="Toggle right to left layout"
+                            title="Toggle RTL">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE TOGGLE -->
+                    <button class="gm-icon-btn"
+                            id="gmDarkToggle"
+                            type="button"
+                            aria-label="Toggle dark mode"
+                            title="Toggle dark mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- LOGIN BUTTON -->
+                    <a href="login.html" class="gm-login-btn">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <span>Login</span>
+
+                    </a>
+
+
+                </div>
+
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         MAIN CONTENT START
+    =========================================== -->
+
+    <main>
+
+<!-- =====================================================
+     CONTACT PAGE – HERO BANNER
+===================================================== -->
+
+<section class="gm-contact-hero" id="gmContactHero">
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="gm-contact-hero-background">
+        <img src="images/contact-hero.jpg"
+             alt="Luxury gemstone jewelry collection"
+             loading="eager">
+    </div>
+
+    <!-- IMAGE OVERLAY -->
+    <div class="gm-contact-hero-overlay"></div>
+
+    <!-- HERO CONTENT -->
+    <div class="gm-contact-hero-container">
+
+        <div class="gm-contact-hero-content">
+
+            <span class="gm-contact-hero-eyebrow">
+                WE'D LOVE TO HEAR FROM YOU
+            </span>
+
+            <h1 class="gm-contact-hero-title">
+                Let's Start a
+                <span>Conversation</span>
+            </h1>
+
+            <p class="gm-contact-hero-description">
+                Whether you have a question about our gemstones,
+                need help with an order or want to discuss a custom
+                design, we're here to help.
+            </p>
+
+            <!-- BREADCRUMB -->
+            <nav class="gm-contact-hero-breadcrumb"
+                 aria-label="Breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span class="gm-contact-hero-separator">/</span>
+
+                <span class="gm-contact-hero-current">
+                    Contact
+                </span>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 2 – CONTACT INFORMATION CARDS
+===================================================== -->
+
+<section class="gm-contact-info" id="gmContactInfo">
+
+    <div class="gm-contact-info-container">
+
+        <!-- SECTION HEADER -->
+        <div class="gm-contact-info-header">
+
+            <span class="gm-contact-info-eyebrow">
+                GET IN TOUCH
+            </span>
+
+            <h2 class="gm-contact-info-title">
+                We'd Love to
+                <span>Hear From You</span>
+            </h2>
+
+            <p class="gm-contact-info-description">
+                Have a question or need assistance? Reach out to
+                our team through any of the contact options below.
+            </p>
+
+        </div>
+
+
+        <!-- CONTACT CARDS -->
+        <div class="gm-contact-info-grid">
+
+            <!-- PHONE CARD -->
+            <div class="gm-contact-info-card">
+
+                <div class="gm-contact-info-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <span class="gm-contact-info-label">
+                    CALL US
+                </span>
+
+                <h3>Phone Support</h3>
+
+                <p>
+                    Speak with our team for personal assistance
+                    and product enquiries.
+                </p>
+
+                <a href="tel:+910000000000">
+                    +91 00000 00000
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- EMAIL CARD -->
+            <div class="gm-contact-info-card">
+
+                <div class="gm-contact-info-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+
+                <span class="gm-contact-info-label">
+                    EMAIL US
+                </span>
+
+                <h3>Email Support</h3>
+
+                <p>
+                    Send us your questions and we'll be happy
+                    to assist you.
+                </p>
+
+                <a href="mailto:hello@example.com">
+                    hello@example.com
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- LOCATION CARD -->
+            <div class="gm-contact-info-card">
+
+                <div class="gm-contact-info-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <span class="gm-contact-info-label">
+                    FIND US
+                </span>
+
+                <h3>Our Location</h3>
+
+                <p>
+                    Visit our store and explore our gemstone
+                    and mineral jewelry collection.
+                </p>
+
+                <a href="#gmContactLocation">
+                    View Our Location
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- BUSINESS HOURS CARD -->
+            <div class="gm-contact-info-card">
+
+                <div class="gm-contact-info-icon">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <span class="gm-contact-info-label">
+                    WHEN TO REACH US
+                </span>
+
+                <h3>Business Hours</h3>
+
+                <p>
+                    Our team is available during the following
+                    business hours.
+                </p>
+
+                <div class="gm-contact-info-hours">
+                    <span>Monday – Saturday</span>
+                    <strong>9:00 AM – 6:00 PM</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 3 – CONTACT FORM
+===================================================== -->
+
+<section class="gm-contact-form-section" id="gmContactForm">
+
+    <div class="gm-contact-form-container">
+
+        <!-- LEFT SIDE – FORM -->
+        <div class="gm-contact-form-content">
+
+            <span class="gm-contact-form-eyebrow">
+                WE'RE READY TO LISTEN
+            </span>
+
+            <h2 class="gm-contact-form-title">
+                Send Us a
+                <span>Message</span>
+            </h2>
+
+            <p class="gm-contact-form-description">
+                Have a question about our gemstone collection or
+                need help with an order? Fill out the form below
+                and share how we can assist you.
+            </p>
+
+
+            <!-- CONTACT FORM -->
+            <form class="gm-contact-form" id="gmContactMessageForm"
+                  action="#" method="post">
+
+                <!-- NAME -->
+                <div class="gm-contact-form-group">
+
+                    <label for="gmContactName">
+                        Full Name <span>*</span>
+                    </label>
+
+                    <input type="text"
+                           id="gmContactName"
+                           name="name"
+                           placeholder="Enter your full name"
+                           autocomplete="name"
+                           required>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="gm-contact-form-group">
+
+                    <label for="gmContactEmail">
+                        Email Address <span>*</span>
+                    </label>
+
+                    <input type="email"
+                           id="gmContactEmail"
+                           name="email"
+                           placeholder="Enter your email address"
+                           autocomplete="email"
+                           required>
+
+                </div>
+
+
+                <!-- PHONE -->
+                <div class="gm-contact-form-group">
+
+                    <label for="gmContactPhone">
+                        Phone Number
+                    </label>
+
+                    <input type="tel"
+                           id="gmContactPhone"
+                           name="phone"
+                           placeholder="Enter your phone number"
+                           autocomplete="tel">
+
+                </div>
+
+
+                <!-- SUBJECT -->
+                <div class="gm-contact-form-group">
+
+                    <label for="gmContactSubject">
+                        Subject <span>*</span>
+                    </label>
+
+                    <select id="gmContactSubject"
+                            name="subject"
+                            required>
+
+                        <option value="" disabled selected>
+                            Select an enquiry type
+                        </option>
+
+                        <option value="Product Enquiry">
+                            Product Enquiry
+                        </option>
+
+                        <option value="Order Assistance">
+                            Order Assistance
+                        </option>
+
+                        <option value="Custom Jewelry Design">
+                            Custom Jewelry Design
+                        </option>
+
+                        <option value="Gemstone Information">
+                            Gemstone Information
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+                <div class="gm-contact-form-group gm-contact-form-message">
+
+                    <label for="gmContactMessage">
+                        Your Message <span>*</span>
+                    </label>
+
+                    <textarea id="gmContactMessage"
+                              name="message"
+                              rows="5"
+                              placeholder="Tell us how we can help you..."
+                              required></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit"
+                        class="gm-contact-form-submit">
+
+                    Send Message
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- RIGHT SIDE – IMAGE -->
+        <div class="gm-contact-form-image">
+
+            <div class="gm-contact-form-image-wrapper">
+
+                <img src="images/contact-form-image.jpg"
+                     alt="Beautiful gemstone jewelry displayed in a luxury setting"
+                     loading="lazy">
+
+            </div>
+
+            <!-- IMAGE CONTENT -->
+            <div class="gm-contact-form-image-content">
+
+                <span>PERSONALIZED CARE</span>
+
+                <h3>
+                    Every Conversation
+                    Begins with You.
+                </h3>
+
+                <p>
+                    From choosing a special gemstone to exploring
+                    a unique jewelry design, we're here to make
+                    your experience meaningful.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 4 – VISIT OUR STORE
+===================================================== -->
+
+<section class="gm-contact-location" id="gmContactLocation">
+
+    <div class="gm-contact-location-container">
+
+        <!-- SECTION HEADER -->
+        <div class="gm-contact-location-header">
+
+            <span class="gm-contact-location-eyebrow">
+                COME VISIT US
+            </span>
+
+            <h2 class="gm-contact-location-title">
+                Find Us
+                <span>Here</span>
+            </h2>
+
+            <p class="gm-contact-location-description">
+                We'd love to welcome you to our store. Visit us
+                to explore our gemstone and mineral jewelry
+                collection in person.
+            </p>
+
+        </div>
+
+
+        <!-- LOCATION CONTENT -->
+        <div class="gm-contact-location-content">
+
+            <!-- LEFT – STORE DETAILS -->
+            <div class="gm-contact-location-details">
+
+                <div class="gm-contact-location-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <span class="gm-contact-location-label">
+                    OUR STORE
+                </span>
+
+                <h3>Visit Our Showroom</h3>
+
+                <p class="gm-contact-location-text">
+                    Discover beautiful gemstones, unique mineral
+                    jewelry and thoughtfully crafted designs
+                    at our store.
+                </p>
+
+
+                <!-- ADDRESS -->
+                <div class="gm-contact-location-detail">
+
+                    <i class="fa-solid fa-map-pin"></i>
+
+                    <div>
+                        <strong>Store Address</strong>
+                        <p>
+                            Add your store address here,
+                            City, State, PIN Code.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- BUSINESS HOURS -->
+                <div class="gm-contact-location-detail">
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    <div>
+                        <strong>Visiting Hours</strong>
+                        <p>
+                            Monday – Saturday<br>
+                            9:00 AM – 6:00 PM
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- DIRECTIONS BUTTON -->
+                <a href="https://www.google.com/maps"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="gm-contact-location-button">
+
+                    Get Directions
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT – GOOGLE MAP -->
+            <div class="gm-contact-location-map">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Chennai,Tamil%20Nadu,India&output=embed"
+                    title="Store location map"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+<!-- ==========================================
+     GEMSTONE & MINERAL FOOTER
+=========================================== -->
+
+<footer class="gm-footer">
+
+    <div class="gm-footer-container">
+
+        <!-- FOOTER MAIN CONTENT -->
+        <div class="gm-footer-main">
+
+            <!-- BRAND COLUMN -->
+            <div class="gm-footer-brand">
+
+                <a href="index.html" class="gm-footer-logo">
+                    <img src="images/logo.png"
+                         alt="Gemstone & Mineral Jewelry Store">
+                </a>
+
+                <p class="gm-footer-description">
+                    Discover the timeless beauty of natural gemstones
+                    and exquisite handcrafted jewelry. Every piece
+                    tells a story of elegance, beauty and individuality.
+                </p>
+
+                <!-- SOCIAL ICONS -->
+                <div class="gm-footer-social">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="gm-footer-column">
+
+                <h3 class="gm-footer-title">Quick Links</h3>
+
+                <ul class="gm-footer-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="products.html">Our Products</a></li>
+
+                    <li><a href="certification.html">
+                        Certification & Sourcing
+                    </a></li>
+
+                    <li><a href="custom-design.html">
+                        Custom Design
+                    </a></li>
+
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CUSTOMER SERVICES -->
+            <div class="gm-footer-column">
+
+                <h3 class="gm-footer-title">Customer Care</h3>
+
+                <ul class="gm-footer-links">
+
+                    <li><a href="contact.html">Contact Support</a></li>
+
+                    <li><a href="custom-design.html">
+                        Personalized Jewelry
+                    </a></li>
+
+                    <li><a href="shipping.html">Shipping Information</a></li>
+
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+
+                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT INFORMATION -->
+            <div class="gm-footer-column gm-footer-contact">
+
+                <h3 class="gm-footer-title">Get In Touch</h3>
+
+                <ul class="gm-footer-contact-list">
+
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:info@gemstonemineral.com">
+                            info@gemstonemineral.com
+                        </a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+910000000000">
+                            +91 00000 00000
+                        </a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Visit us for beautiful gemstone
+                            and mineral collections.
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Monday – Saturday: 9 AM – 6 PM</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER DIVIDER -->
+        <div class="gm-footer-divider"></div>
+
+
+        <!-- FOOTER BOTTOM -->
+        <div class="gm-footer-bottom">
+
+            <p class="gm-footer-copyright">
+                © 2026 Gemstone & Mineral. All Rights Reserved.
+            </p>
+
+            <div class="gm-footer-legal">
+
+                <a href="privacy-policy.html">Privacy Policy</a>
+
+                <a href="terms.html">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- END GEMSTONE & MINERAL FOOTER -->
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
