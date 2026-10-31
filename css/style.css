@@ -20120,3 +20120,75 @@ body.gm-dark-mode .gm-nav-list .gm-nav-item > a.gm-nav-link.active::after,
 body.gm-dark-mode .gm-nav-list .gm-nav-item > a.gm-nav-link[aria-current="page"]::after {
     background: #D1B77F !important;
 }
+
+
+
+
+
+
+/* =========================================
+   SCROLL TO TOP BUTTON
+========================================= */
+
+.gm-scroll-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #B69A64;
+    color: #172B23;
+    border: 1px solid #B69A64;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+}
+
+.gm-scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.gm-scroll-top:hover {
+    background: #183D35;
+    color: #F5F0E6;
+    border-color: #B69A64;
+}
+
+/* Dark mode */
+body.gm-dark-mode .gm-scroll-top {
+    background: #D1B77F;
+    color: #172B23;
+    border-color: #D1B77F;
+}
+
+/* RTL */
+html[dir="rtl"] .gm-scroll-top {
+    right: auto;
+    left: 25px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .gm-scroll-top {
+        width: 42px;
+        height: 42px;
+        right: 15px;
+        bottom: 15px;
+        font-size: 14px;
+    }
+
+    html[dir="rtl"] .gm-scroll-top {
+        right: auto;
+        left: 15px;
+    }
+}
