@@ -20192,3 +20192,348 @@ html[dir="rtl"] .gm-scroll-top {
         left: 15px;
     }
 }
+
+
+
+
+/* PRODUCT DESCRIPTION */
+
+.gm-cert-featured-text {
+    min-height: 36px;
+    margin: 7px 0 10px;
+    color: #74736C;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* DARK MODE */
+
+body.gm-dark-mode .gm-cert-featured-text {
+    color: #C5C8C0;
+}
+
+
+
+
+/* SORT DROPDOWN */
+.gm-products-sort select {
+    width: 100%;
+    height: 48px;
+    padding: 0 42px 0 14px !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #F5F0E6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' fill='none' stroke='%23183D35' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+
+    border: 1px solid #D8BD85;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* RTL */
+html[dir="rtl"] .gm-products-sort select {
+    padding: 0 14px 0 42px !important;
+    background-position: left 15px center;
+}
+
+
+
+
+/* DARK MODE - PRODUCT SORT DROPDOWN ARROW */
+
+body.gm-dark-mode .gm-products-sort select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #202722;
+    color: #F5F0E6;
+
+    border: 1px solid #B69A64;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23D8BD85' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 14px;
+
+    padding-right: 38px;
+}
+
+/* RTL DARK MODE */
+html[dir="rtl"] body.gm-dark-mode .gm-products-sort select {
+    background-position: left 14px center;
+    padding-right: 12px;
+    padding-left: 38px;
+}
+
+/* DROPDOWN OPTIONS */
+body.gm-dark-mode .gm-products-sort select option {
+    background-color: #202722;
+    color: #F5F0E6;
+}
+
+
+
+/* DARK MODE - FORCE SORT ARROW */
+body.gm-dark-mode .gm-products-sort select {
+    color-scheme: dark !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    background-color: #202722 !important;
+    color: #F5F0E6 !important;
+    border-color: #B69A64 !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='m5 7 5 5 5-5' fill='none' stroke='%23D8BD85' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-size: 14px !important;
+    background-position: right 14px center !important;
+    padding-right: 38px !important;
+}
+
+html[dir="rtl"] body.gm-dark-mode .gm-products-sort select {
+    background-position: left 14px center !important;
+    padding-left: 38px !important;
+    padding-right: 12px !important;
+}
+
+
+
+
+/* Product card content spacing */
+.gm-product-info {
+    padding: 18px 20px 20px !important;
+    box-sizing: border-box;
+}
+
+.gm-product-info .gm-product-category {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gm-product-info h3 {
+    margin-bottom: 12px;
+}
+
+.gm-product-info .gm-product-price {
+    margin-bottom: 0;
+}
+
+
+
+
+/* Custom CTA paragraph alignment */
+.gm-custom-cta-description {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 28px !important;
+    text-align: center !important;
+}
+
+
+
+
+
+
+/* =========================================
+   CONTACT SUBJECT DROPDOWN ARROW
+========================================= */
+
+.gm-contact-form-group select#gmContactSubject {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    padding-right: 42px !important;
+
+    background-color: #FFFFFF !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23183D35' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-position: right 16px center !important;
+    background-size: 14px !important;
+}
+
+/* RTL */
+html[dir="rtl"] .gm-contact-form-group select#gmContactSubject {
+    padding-right: 15px !important;
+    padding-left: 42px !important;
+    background-position: left 16px center !important;
+}
+
+
+
+/* =========================================
+   CONTACT DROPDOWN - DARK MODE
+========================================= */
+
+body.gm-dark-mode .gm-contact-form-group select#gmContactSubject {
+    background-color: #202722 !important;
+    color: #F5F0E6 !important;
+    border: 1px solid #46534A !important;
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23D8BD85' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-position: right 16px center !important;
+    background-size: 14px !important;
+
+    padding-right: 42px !important;
+}
+
+/* Dropdown options */
+body.gm-dark-mode .gm-contact-form-group select#gmContactSubject option {
+    background: #202722 !important;
+    color: #F5F0E6 !important;
+}
+
+/* RTL dark mode */
+html[dir="rtl"] body.gm-dark-mode
+.gm-contact-form-group select#gmContactSubject {
+    background-position: left 16px center !important;
+    padding-right: 15px !important;
+    padding-left: 42px !important;
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   LOGIN INPUTS - DARK MODE
+========================================= */
+
+body.gm-dark-mode .gm-login-input-wrapper {
+    background: #101713 !important;
+    border: 1px solid #46534A !important;
+}
+
+body.gm-dark-mode .gm-login-input-wrapper input {
+    background: transparent !important;
+    color: #F5F0E6 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+body.gm-dark-mode .gm-login-input-wrapper input::placeholder {
+    color: #A9B0A8 !important;
+    opacity: 1;
+}
+
+body.gm-dark-mode .gm-login-input-wrapper > i {
+    color: #B69A64 !important;
+}
+
+body.gm-dark-mode .gm-login-password-toggle {
+    background: transparent !important;
+    color: #D8BD85 !important;
+    border: none !important;
+}
+
+body.gm-dark-mode .gm-login-input-wrapper:focus-within {
+    border-color: #B69A64 !important;
+    box-shadow: 0 0 0 3px rgba(182, 154, 100, 0.12) !important;
+}
+
+
+
+/* Login topbar - dark mode */
+body.gm-dark-mode .gm-login-header {
+    background-color: #171C19 !important;
+    border-bottom: 1px solid #171C19 !important;
+    box-shadow: none !important;
+}
+
+body.gm-dark-mode .gm-login-header-container {
+    background-color: #171C19 !important;
+}
+
+
+
+
+/* =========================================
+   REGISTER INPUTS - DARK MODE
+========================================= */
+
+body.gm-dark-mode .gm-register-input-wrapper {
+    background: #101713 !important;
+    border: 1px solid #39443D !important;
+    box-shadow: none !important;
+}
+
+body.gm-dark-mode .gm-register-input-wrapper input {
+    background: transparent !important;
+    color: #F5F0E6 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+body.gm-dark-mode .gm-register-input-wrapper input::placeholder {
+    color: #A9B0A8 !important;
+    opacity: 1;
+}
+
+body.gm-dark-mode .gm-register-input-wrapper > i {
+    color: #B69A64 !important;
+}
+
+body.gm-dark-mode .gm-register-password-toggle {
+    background: transparent !important;
+    color: #D8BD85 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+body.gm-dark-mode .gm-register-input-wrapper:focus-within {
+    border-color: #B69A64 !important;
+    box-shadow: 0 0 0 3px rgba(182, 154, 100, 0.12) !important;
+}
+
+
+
+
+/* =========================================
+   REGISTER HEADER - DARK MODE
+   Match Login Header
+========================================= */
+
+body.gm-dark-mode .gm-register-header {
+    background-color: #171C19 !important;
+    border-bottom: 1px solid #171C19 !important;
+    box-shadow: none !important;
+}
+
+body.gm-dark-mode .gm-register-header-container {
+    background-color: #171C19 !important;
+}
+
+body.gm-dark-mode .gm-register-header-actions {
+    background: transparent !important;
+}
+
+body.gm-dark-mode .gm-register-header .gm-icon-btn {
+    background: transparent !important;
+    border: 1px solid #39483E !important;
+    color: #D8BD85 !important;
+}
+
+body.gm-dark-mode .gm-register-header .gm-icon-btn:hover {
+    background: #202722 !important;
+    border-color: #B69A64 !important;
+}

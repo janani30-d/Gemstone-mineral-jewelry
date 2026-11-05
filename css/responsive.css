@@ -19711,3 +19711,125 @@ body > section:first-child,
     }
 
 }
+
+
+
+/* =========================================
+   CUSTOM GALLERY - RTL ALIGNMENT
+========================================= */
+
+html[dir="rtl"] .gm-custom-gallery-overlay {
+    direction: rtl;
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .gm-custom-gallery-info {
+    direction: rtl;
+    text-align: right !important;
+    align-items: flex-start;
+}
+
+html[dir="rtl"] .gm-custom-gallery-info span,
+html[dir="rtl"] .gm-custom-gallery-info h3 {
+    text-align: right !important;
+    width: 100%;
+    direction: rtl;
+}
+
+html[dir="rtl"] .gm-custom-gallery-view {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+
+
+
+/* =========================================
+   CUSTOM GALLERY - RTL TEXT ALIGNMENT
+========================================= */
+
+html[dir="rtl"] .gm-custom-gallery-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end !important;
+    text-align: right !important;
+    direction: rtl;
+    width: 100%;
+}
+
+html[dir="rtl"] .gm-custom-gallery-info span,
+html[dir="rtl"] .gm-custom-gallery-info h3 {
+    width: 100%;
+    text-align: right !important;
+    direction: rtl;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Keep view icon in its original position */
+html[dir="rtl"] .gm-custom-gallery-overlay {
+    flex-direction: row;
+}
+
+
+
+
+
+/* =========================================
+   CERTIFICATION PROCESS - MOBILE GAP FIX
+========================================= */
+
+@media (max-width: 767px) {
+
+    .gm-cert-process {
+        padding: 55px 5% 30px !important;
+    }
+
+    .gm-cert-process-header {
+        margin-bottom: 30px !important;
+    }
+
+    .gm-cert-process-grid {
+        gap: 15px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .gm-cert-process-content {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 16px 15px 18px !important;
+    }
+
+    .gm-cert-process-note {
+        margin: 20px auto 0 !important;
+        padding: 14px 16px !important;
+    }
+
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+
+    .gm-cert-process {
+        padding-bottom: 20px !important;
+    }
+
+    .gm-cert-process-header {
+        margin-bottom: 24px !important;
+    }
+
+    .gm-cert-process-grid {
+        gap: 12px !important;
+    }
+
+    .gm-cert-process-content {
+        padding: 13px 12px 15px !important;
+    }
+
+    .gm-cert-process-note {
+        margin-top: 15px !important;
+        padding: 12px !important;
+    }
+
+}

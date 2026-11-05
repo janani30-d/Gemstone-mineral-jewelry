@@ -889,3 +889,119 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   CERTIFICATION FEATURED PRODUCT FILTER
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const filterButtons = document.querySelectorAll(
+        ".gm-cert-featured-filter"
+    );
+
+    const productCards = document.querySelectorAll(
+        ".gm-cert-featured-card"
+    );
+
+    if (!filterButtons.length || !productCards.length) return;
+
+    filterButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const selectedCategory = this.dataset.filter;
+
+            // Update active filter button
+            filterButtons.forEach(function (filter) {
+                filter.classList.remove("active");
+            });
+
+            this.classList.add("active");
+
+            // Filter products
+            productCards.forEach(function (card) {
+
+                const productCategory = card.dataset.category;
+
+                if (
+                    selectedCategory === "all" ||
+                    productCategory === selectedCategory
+                ) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+
+            });
+
+        });
+
+    });
+
+});
+
+
+
+
+
+
+
+
+
+/* =========================================
+   GEMSTONE PRODUCTS - CATEGORY FILTER
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const filterButtons = document.querySelectorAll(".gm-product-filter");
+    const productCards = document.querySelectorAll(".gm-product-card");
+    const emptyMessage = document.getElementById("gmProductsEmpty");
+
+    if (!filterButtons.length || !productCards.length) return;
+
+    filterButtons.forEach(button => {
+
+        button.addEventListener("click", function () {
+
+            // Active button
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            const selectedFilter = this.dataset.filter;
+            let visibleCount = 0;
+
+            // Filter products
+            productCards.forEach(card => {
+
+                const category = card.dataset.category;
+
+                if (selectedFilter === "all" || category === selectedFilter) {
+                    card.style.display = "";
+                    visibleCount++;
+                } else {
+                    card.style.display = "none";
+                }
+
+            });
+
+            // Show empty message if no products
+            if (emptyMessage) {
+                emptyMessage.hidden = visibleCount !== 0;
+            }
+
+        });
+
+    });
+
+});
