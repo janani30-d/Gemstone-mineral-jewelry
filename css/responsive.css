@@ -19833,3 +19833,107 @@ html[dir="rtl"] .gm-custom-gallery-overlay {
     }
 
 }
+/* Centered single-panel account cards */
+.gm-login-page .gm-login-wrapper,
+.gm-register-page .gm-register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 0;
+    max-width: 900px;
+    margin: 40px auto 0;
+    border-radius: 12px;
+    box-shadow: 0 18px 55px rgba(28, 43, 34, 0.12);
+}
+
+.gm-login-page .gm-login-form-panel,
+.gm-register-page .gm-register-form-panel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 0;
+    padding: 56px clamp(24px, 7vw, 88px);
+}
+
+.gm-login-page .gm-login-form-inner,
+.gm-register-page .gm-register-form-inner {
+    width: 100%;
+    max-width: 620px;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .gm-login-page .gm-login-main,
+    .gm-register-page .gm-register-main {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .gm-login-page .gm-login-wrapper,
+    .gm-register-page .gm-register-wrapper {
+        margin-top: 24px;
+    }
+
+    .gm-login-page .gm-login-form-panel,
+    .gm-register-page .gm-register-form-panel {
+        padding: 36px 22px;
+    }
+}
+
+/* Center hero banner copy on every inner page (home 1 and home 2 stay unchanged). */
+.gm-about-hero:not(.gm-home2-hero),
+.gm-contact-hero,
+.gm-custom-hero {
+    text-align: center;
+}
+
+.gm-about-hero .gm-about-hero-container,
+.gm-contact-hero .gm-contact-hero-container,
+.gm-custom-hero .gm-custom-hero-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gm-about-hero .gm-about-hero-content,
+.gm-contact-hero .gm-contact-hero-content,
+.gm-custom-hero .gm-custom-hero-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.gm-about-hero .gm-about-hero-title,
+.gm-about-hero .gm-about-hero-description,
+.gm-contact-hero .gm-contact-hero-title,
+.gm-contact-hero .gm-contact-hero-description,
+.gm-custom-hero .gm-custom-hero-title,
+.gm-custom-hero .gm-custom-hero-description {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.gm-about-hero .gm-about-hero-eyebrow,
+.gm-contact-hero .gm-contact-hero-eyebrow,
+.gm-custom-hero .gm-custom-hero-eyebrow {
+    display: block;
+    text-align: center;
+}
+
+.gm-about-hero .gm-about-hero-breadcrumb,
+.gm-contact-hero .gm-contact-hero-breadcrumb,
+.gm-custom-hero .gm-custom-hero-breadcrumb {
+    justify-content: center;
+    text-align: center;
+}
+
+/* About hero uses its own breadcrumb class. */
+.gm-about-hero .gm-about-breadcrumb {
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
