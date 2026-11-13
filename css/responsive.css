@@ -19916,6 +19916,14 @@ html[dir="rtl"] .gm-custom-gallery-overlay {
     text-align: center;
 }
 
+/* Keep both lines of the products hero heading centered in every direction. */
+.gm-products-hero .gm-about-hero-title,
+.gm-products-hero .gm-about-hero-title span {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .gm-about-hero .gm-about-hero-eyebrow,
 .gm-contact-hero .gm-contact-hero-eyebrow,
 .gm-custom-hero .gm-custom-hero-eyebrow {
@@ -19936,4 +19944,117 @@ html[dir="rtl"] .gm-custom-gallery-overlay {
     margin: 0 auto;
     justify-content: center;
     text-align: center;
+}
+
+/* Center inner-page heroes in RTL. Home 1 and home 2 use separate classes. */
+html[dir="rtl"] .gm-about-hero:not(.gm-home2-hero),
+html[dir="rtl"] .gm-contact-hero,
+html[dir="rtl"] .gm-custom-hero {
+    direction: rtl;
+    text-align: center;
+}
+
+html[dir="rtl"] .gm-about-hero:not(.gm-home2-hero) .gm-about-hero-container,
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-container,
+html[dir="rtl"] .gm-custom-hero .gm-custom-hero-container {
+    text-align: center;
+}
+
+html[dir="rtl"] .gm-about-hero:not(.gm-home2-hero) .gm-about-hero-content,
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-content,
+html[dir="rtl"] .gm-custom-hero .gm-custom-hero-content {
+    align-items: center;
+    text-align: center;
+}
+
+html[dir="rtl"] .gm-about-hero:not(.gm-home2-hero) .gm-about-hero-eyebrow,
+html[dir="rtl"] .gm-about-hero:not(.gm-home2-hero) .gm-about-hero-title,
+html[dir="rtl"] .gm-about-hero:not(.gm-home2-hero) .gm-about-hero-description,
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-eyebrow,
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-title,
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-description,
+html[dir="rtl"] .gm-custom-hero .gm-custom-hero-eyebrow,
+html[dir="rtl"] .gm-custom-hero .gm-custom-hero-title,
+html[dir="rtl"] .gm-custom-hero .gm-custom-hero-description {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+html[dir="rtl"] .gm-about-hero:not(.gm-home2-hero) .gm-about-hero-breadcrumb,
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-breadcrumb,
+html[dir="rtl"] .gm-custom-hero .gm-custom-hero-breadcrumb {
+    justify-content: center;
+    text-align: center;
+}
+
+html[dir="rtl"] .gm-about-hero:not(.gm-home2-hero) .gm-about-breadcrumb {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Clear older RTL rules that pinned these page elements to the right. */
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-container {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-content {
+    width: 100% !important;
+    max-width: 800px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-eyebrow,
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-title {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-description {
+    max-width: 650px !important;
+    margin: 0 auto 27px !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .gm-contact-hero .gm-contact-hero-breadcrumb {
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .gm-about-hero:not(.gm-home2-hero) .gm-about-hero-content {
+    align-items: center !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .gm-about-hero:not(.gm-home2-hero) .gm-about-breadcrumb {
+    align-self: center !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    margin: 25px auto 0 !important;
+    justify-content: center !important;
+    direction: ltr !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .gm-products-hero .gm-about-hero-eyebrow {
+    width: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .gm-products-hero .gm-about-hero-title,
+html[dir="rtl"] .gm-products-hero .gm-about-hero-title span {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
 }
